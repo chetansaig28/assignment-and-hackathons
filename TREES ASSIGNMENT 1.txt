@@ -1,0 +1,169 @@
+//QUIZ -TRESS//
+		                            -----------------------
+						G.CHETANSAI
+						19BEC013
+						SEC-B
+                                     		
+1)List the nodes of the tree below in INORDER, PREORDER and 
+   POSTORDER and breadth-first order?
+                           L
+		         / | \	
+	                K  I   H
+	               /\ / | \
+     	             A   J   E F  G
+	                / \  |
+	                B C  D
+Ans)INORDER:   AKBJCLIDEFHG
+       PREORDER: LKAJBCIHEDFG 
+       POSTORDER: ABCJKILDEFHG
+       BREADTH FIRST ORDER: LKIHAJEFGBCD
+__________________________________________________________________________
+
+2) In the binary search tree below, carry out the following operations 
+in sequence and rearrange the TREE. Add 6, add 15, delete 23, 
+delete 9. Show the Final TREE???
+
+Ans)ADDING 6:
+	             15
+	           /    \
+	         9       23
+	       /    \     /
+	      3      12  19
+	              /     \
+                     10      21
+	            /
+	           6
+
+ ADDING 15:
+		 15
+		/   \
+	       9     23
+	      /  \    /
+             3   12  19
+	     \     \
+	      10    21
+		    /  \
+		 6     15
+
+DELETING 23;
+
+		           15
+               		  /  \
+	                9      19
+	              /    \      \
+	            3       12     21
+		     \
+		      10
+		      /   \
+		    6       15
+
+DELETING 9:     THE FINAL TREE
+
+		15(2)
+		/   \
+	        3     19
+		 \       \
+		   12     21
+		   /
+		 10
+		/
+	       6		
+(15 is repeated twice in the given binary tree this can be modified into the above final tree)
+
+(2)yes,the given tree is AVL TREE as the difference between the heights of left and right subtree
+is not more than 1
+_______________________________________________________________________________________
+
+3)HEIGHT of the tree 
+   
+	The largest number of nodes= 2pow(n+1)-1=2pow(4)-1=15
+	The smallest number of nodes=2pow(n-1)=2pow(3-1)=4
+
+Tree with largest number of nodes 15
+		
+			         A
+		               /   \
+		             B      C
+	                    / \    /  \
+		          D    E   F   G 
+		         /\   / \ / \  / \
+		        H I  J  K L  M N  O
+
+INTERNAL NODES ---->A,B,C,D,E,F,G
+LEAF NODES------->H,I,J,K,L,M,N,O
+                            
+Tree with smallest number of nodes 4
+		          A
+	                 /
+                        B
+	              /
+                     C
+	           /
+	         D
+INTERNAL NODES------>A,B,C
+LEAF NODES------->D
+_____________________________________________________________________________
+
+4)FALSE
+	In preorder traversal of tree the printed item is not smallest one
+	According to rule,in preorder we first put down root node and 
+	then followed by left child and right child.In b/w left child may be smallest 
+	but not the first one.
+ex:-
+			           5
+		                /    \
+		              3        8
+		            /   \     /  \
+		          1      4  7    10
+preorder is 5 3 1 4 8 7 10
+here 3 is the smallest in first cycle but is not in first position.
+______________________________________________________________________________
+5)The breadth first Travesal of given number is
+2,3,5,10,8,7,22,11,13,20,24,16
+As this is not a binary search tree insertion and deletion is not possible for this traversal.
+_______________________________________________________________________________
+6)The post order traversal sequence for binary search tree is given by 
+10,30,20,150,300,200,100
+consider binary tree as
+		         A
+	               /  \
+	             B     C
+	            /  \   /  \
+	           D   E F    G
+the post traversal for thus tree will be 
+D E B F G C A
+
+comparing node t given values
+A----->100
+B----->20
+C----->200
+D----->10
+E----->30
+F----->150
+G----->300
+THE FINAL BINARY TREE WILL BE:
+		         100
+		        /    \
+	              20     200
+	             /   \    /  \
+	          10     30 150  300	
+________________________________________________________________________
+7)If the numbers 7,5,1,8,3,6,0,9,4,2 are inserted in order the binary search tree 
+will be:
+		        7
+	               /  \
+	             5      8
+	            /  \      \
+	          1     6       9
+	         /  \
+	       0      3
+	              /  \
+	             2    4
+Thw inorder traversal for the tree will be
+0,1,2,3,4,5,6,7,8,9
+
+option is ---->(3)
+_________________________________________________________________________
+
+                                            -------->THE END<--------
+_________________________________________________________________________
